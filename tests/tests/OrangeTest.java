@@ -26,6 +26,7 @@ public class OrangeTest {
 		assertTrue(o1.equals(o3));
 		assertEquals("France",o1.getOrigine());
 		assertEquals(o1.getOrigine(),o2.getOrigine());
+		assertTrue(0.80==o1.getPrix());
 
 	}
 

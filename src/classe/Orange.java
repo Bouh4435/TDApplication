@@ -26,10 +26,15 @@ public class Orange {
 
 	
 	public boolean equals(Orange o) {
+		System.out.println("------"+this.getPrix()); 
 		if(o.getOrigine()!=this.getOrigine())
 			return false;
 		if(o.getPrix()!=this.getPrix())
+		{
+			System.out.println(this.getPrix()); 			
 			return false;
+
+		}
 		return true;
 	}
 	

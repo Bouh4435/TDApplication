@@ -68,17 +68,28 @@ public class Panier {
 	
 	public boolean equals(Panier p) {
 		boolean test=false;
-		if (p.getPanier().size()!=this.panier.size()) {
+		if (p.panier.size()!=this.panier.size()) {
 			return false;
 		}
-		
-		for(Orange o : p.getPanier()) {
+		for(int i=0;i<(p.panier.size());i++) {
 			test=false;
-			for(Orange o2 : this.getPanier()) {
-				if(o.equals(o2))
-					test=true;
-					break;
+			
+			for(int j=0;j<(this.panier.size());j++) {
+				//System.out.println(panier.get(i));
+				if(p.panier.get(i).equals(panier.get(j)))
+						{
+					//System.out.println(("--------"+panier.get(i)));
+						test=true;
+				break;}
+				
 			}
+//		for(Orange o : p.getPanier()) {
+//			test=false;
+//			for(Orange o2 : this.getPanier()) {
+//				if(o.equals(o2))
+//					test=true;
+//					break;
+//			}
 		if(!test)
 			return false;
 		}

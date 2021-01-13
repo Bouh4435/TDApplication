@@ -17,6 +17,7 @@
 			<formatter type="xml" />
 			<test name="tests.OrangeTest" outfile="resultOrange" />
 			<test name="tests.PanierTest" outfile="resultPanier" />
+			<test name="tests" outfile="result" />
 		</junit>
 	</target>
 </project>
