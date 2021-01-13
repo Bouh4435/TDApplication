@@ -24,10 +24,9 @@ public class Orange {
 		return "Orange : origine=" + origine + ", prix=" + prix;
 	}
 
-	
 	public boolean equals(Orange o) {
 		System.out.println("------"+this.getPrix()); 
-		if(o.getOrigine()!=this.getOrigine())
+		if(o.getOrigine().equals(this.getOrigine()))
 			return false;
 		if(o.getPrix()!=this.getPrix())
 		{

@@ -66,6 +66,7 @@ public class Panier {
 		return this;
 	}
 	
+	
 	public boolean equals(Panier p) {
 		boolean test=false;
 		if (p.panier.size()!=this.panier.size()) {
