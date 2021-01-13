@@ -26,7 +26,7 @@ public class Orange {
 
 	public boolean equals(Orange o) {
 		System.out.println("------"+this.getPrix()); 
-		if(o.getOrigine().equals(this.getOrigine()))
+		if(! o.getOrigine().equals(this.getOrigine()))
 			return false;
 		if(o.getPrix()!=this.getPrix())
 		{
