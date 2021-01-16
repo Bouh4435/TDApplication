@@ -21,6 +21,7 @@ public class PanierTest {
 		panier1 = new ArrayList<Orange>();
 		panier2 = new ArrayList<Orange>();
 		panier3 = new ArrayList<Orange>();
+		
 		p1 = new Panier(panier, 10);
 		p2 = new Panier(panier1, 10);
 		p3 = new Panier(panier2, 5);
